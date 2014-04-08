@@ -1,6 +1,5 @@
-//Installing kernel source (from http://stackoverflow.com/questions/19291925/fedora-19-x86-64-kernel-version-is-different-with-kernel-source)
 
-yum update
-yum install kernel-devel
-yum install kernel-headers
-reboot
+
+sudo yum update
+sudo yum install kernel-devel
+

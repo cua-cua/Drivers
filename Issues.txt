@@ -1,0 +1,14 @@
+//Installing kernel source 
+
+yum update
+yum install kernel-devel
+yum install kernel-headers
+
+//Makefile
+
+With make, tab no space (error copying from web sites)
+
+// make
+
+to transform code .c to code .ko
+files Makefile and .c in the same directory

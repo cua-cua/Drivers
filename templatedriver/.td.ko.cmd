@@ -1,0 +1,1 @@
+cmd_/home/clara/Drivers/templatedriver/td.ko := ld -r -m elf_x86_64 -T /usr/src/kernels/3.13.7-100.fc19.x86_64/scripts/module-common.lds --build-id  -o /home/clara/Drivers/templatedriver/td.ko /home/clara/Drivers/templatedriver/td.o /home/clara/Drivers/templatedriver/td.mod.o

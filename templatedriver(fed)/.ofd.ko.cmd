@@ -1,0 +1,1 @@
+cmd_/home/clara/Drivers/tempdriverfed/ofd.ko := ld -r -m elf_x86_64 -T /usr/src/kernels/3.13.7-100.fc19.x86_64/scripts/module-common.lds --build-id  -o /home/clara/Drivers/tempdriverfed/ofd.ko /home/clara/Drivers/tempdriverfed/ofd.o /home/clara/Drivers/tempdriverfed/ofd.mod.o

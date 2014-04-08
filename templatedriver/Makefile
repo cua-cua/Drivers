@@ -7,9 +7,11 @@ ifneq (${KERNELRELEASE},)
 # Otherwise we were called directly from the command line.
 # Invoke the kernel build system.
 else
-    KERNEL_SOURCE := /usr/src/kernels/3.13.7-100.fc19.x86_64
+    KERNEL_SOURCE := /lib/modules/$(shell uname -r)/build
     PWD := $(shell pwd)
-default:${MAKE} -C ${KERNEL_SOURCE} SUBDIRS=${PWD} modules
-clean:${MAKE} -C ${KERNEL_SOURCE} SUBDIRS=${PWD} clean
+default:
+	${MAKE} -C ${KERNEL_SOURCE} SUBDIRS=${PWD} modules
+clean:
+	${MAKE} -C ${KERNEL_SOURCE} SUBDIRS=${PWD} clean
 endif
 
